@@ -1,10 +1,11 @@
 import React from 'react';
+import PostInput from './PostInput';
 
 function Centerbox(props) {
 
   return (
     <div style={props.styleRuleProp}>
-      <p> Hey Yo</p>
+      <PostInput/>
       <hr/>
     </div>
   )
