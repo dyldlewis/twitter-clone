@@ -4,8 +4,10 @@ import Trends from './Trends.jsx';
 
 function Sidebar(props) {
   var sidebarStyle = {
+    display: "inline-block",
+    verticalAlign: "top",
     maxWidth: "250",
-    overflow: "hidden"
+    overflow: "hidden",
   }
   return(
     <div style={sidebarStyle}>
