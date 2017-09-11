@@ -3,20 +3,26 @@ import React from "react";
 function Header(props) {
   var listStyle = {
     listStyle: "none",
+    display: "inline-block",
+    marginRight: "30%"
     // textAlign: "center",
   }
   var listItemStyle = {
-    display: "inline-block",
+    display: "inline",
+    margin: "10"
+  }
+  var inputStyle = {
+    margin: "10"
   }
   return (
     <div>
       <ul style={listStyle}>
         <li style={listItemStyle}>Home</li>
-        <li>Notifications</li>
-        <li>Messages</li>
+        <li style={listItemStyle}>Notifications</li>
+        <li style={listItemStyle}>Messages</li>
       </ul>
-      <input type="text" placeholder="Search"></input>
-      <input type="text" placeholder="Tweet"></input>
+      <input style={inputStyle} type="text" placeholder="Search"></input>
+      <input style={inputStyle} type="text" placeholder="Tweet"></input>
     </div>
   );
 }
