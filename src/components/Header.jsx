@@ -24,6 +24,7 @@ function Header(props) {
       </ul>
       <input style={inputStyle} type="text" placeholder="Search"></input>
       <input style={inputStyle} type="text" placeholder="Tweet"></input>
+      <hr/>
     </div>
   );
 }
