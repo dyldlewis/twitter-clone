@@ -4,12 +4,13 @@ function Header(props) {
   var listStyle = {
     listStyle: "none",
     display: "inline-block",
-    marginRight: "30%"
+    marginRight: "30%",
     // textAlign: "center",
   }
   var listItemStyle = {
+    border: "solid 1px lightgrey",
     display: "inline",
-    margin: "10"
+    padding: "5"
   }
   var inputStyle = {
     margin: "10"
