@@ -1,5 +1,6 @@
 import React from 'react';
 import PostInput from './PostInput';
+import TweetFeed from './TweetFeed';
 
 function Centerbox(props) {
 
@@ -7,6 +8,7 @@ function Centerbox(props) {
     <div style={props.styleRuleProp}>
       <PostInput/>
       <hr/>
+      <TweetFeed/>
     </div>
   )
 }

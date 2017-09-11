@@ -8,7 +8,8 @@ function PostInput(props) {
     height: "25px"
   }
   var titleStyle = {
-    display: "inline-block"
+    display: "inline-block",
+    marginLeft: "10px"
   }
   return(
     <div>
