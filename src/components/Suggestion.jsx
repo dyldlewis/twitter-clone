@@ -4,13 +4,12 @@ function Suggestion(props) {
   var imgStyle = {
     maxWidth: "50",
     display: "inline-block",
-    margin: "10",
-    marginLeft: "20"
+    margin: "20"
   }
   var handleStyle = {
-    marginLeft: "20",
+    marginRight: "10",
     display: "inline-block",
-    width: "50%"
+    width: "60%"
   }
   return(
     <div>
