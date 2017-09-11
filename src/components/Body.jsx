@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar.jsx";
 import Centerbox from "./Centerbox.jsx";
+import RightSide from "./RightSide.jsx";
 
 function Body(props) {
   var centerboxStyle = {
@@ -17,6 +18,7 @@ function Body(props) {
     <div>
       <Sidebar />
       <Centerbox styleRuleProp={centerboxStyle}/>
+      <RightSide/>
     </div>
   )
 }
