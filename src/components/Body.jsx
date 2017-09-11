@@ -15,7 +15,7 @@ function Body(props) {
     marginRight: "20"
   }
   return(
-    <div>
+    <div style={props.bodyStyleProp}>
       <Sidebar />
       <Centerbox styleRuleProp={centerboxStyle}/>
       <RightSide/>
