@@ -16,7 +16,7 @@ function Header(props) {
         <li>Messages</li>
       </ul>
       <input type="text" placeholder="Search"></input>
-      
+      <input type="text" placeholder="Tweet"></input>
     </div>
   );
 }
