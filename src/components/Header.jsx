@@ -15,6 +15,8 @@ function Header(props) {
         <li>Notifications</li>
         <li>Messages</li>
       </ul>
+      <input type="text" placeholder="Search"></input>
+      
     </div>
   );
 }
