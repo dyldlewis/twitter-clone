@@ -13,10 +13,11 @@ function Header(props) {
     padding: "5"
   }
   var inputStyle = {
-    margin: "10"
+    margin: "10",
+    display: "inline-block"
   }
   return (
-    <div>
+    <div style={props.headerStyleProp}>
       <ul style={listStyle}>
         <li style={listItemStyle}>Home</li>
         <li style={listItemStyle}>Notifications</li>

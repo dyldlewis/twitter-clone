@@ -8,7 +8,7 @@ function App(props){
   }
   return(
     <div>
-      <Header/>
+      <Header headerStyleProp={centerAllOfIt}/>
       <Body bodyStyleProp={centerAllOfIt}/>
     </div>
   );
