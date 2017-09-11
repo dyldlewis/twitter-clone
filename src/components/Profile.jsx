@@ -32,7 +32,7 @@ function Profile(props) {
   return(
     <div style={profileBoxStyle}>
       <img style={imgStyle} src="http://icons.veryicon.com/png/Internet%20%26%20Web/Simple%201/twitter.png"/>
-      <h3 style={nameStyle}>Nancy Kerrigan</h3>
+      <h3 style={nameStyle}>Hipster Jesus</h3>
       <ul style={listStyle}>
         <li style={listItemStyle}>TWEETS</li>
         <li style={listItemStyle}>FOLLOWING</li>
