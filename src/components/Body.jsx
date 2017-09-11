@@ -1,10 +1,10 @@
 import React from "react";
-import Profile from "./Profile.jsx";
+import Sidebar from "./Sidebar.jsx";
 
 function Body(props) {
   return(
     <div>
-      <Profile/>
+      <Sidebar/>
     </div>
   )
 }

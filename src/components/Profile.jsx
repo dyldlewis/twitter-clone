@@ -6,7 +6,8 @@ function Profile(props) {
     border: "lightgrey 1px solid",
     display: "inline-block",
     overflow: "hidden",
-    padding: "10"
+    padding: "10",
+    width: "91%"
   }
   var listStyle = {
     listStyle: "none",
