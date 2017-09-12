@@ -14,6 +14,7 @@ class PostInput extends React.Component {
     const { _content } = this.refs;
     var newTweet = new Tweet(_content.value);
     this.props.onNewTweetCreation(newTweet);
+    _content.value = "";
   }
 
   render() {
