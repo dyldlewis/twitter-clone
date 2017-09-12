@@ -10,7 +10,6 @@ class PostInput extends React.Component {
 
   handleNewTweetFormSubmission(event) {
     event.preventDefault();
-    console.log(this.refs._content.value);
     const { _content } = this.refs;
     var newTweet = new Tweet(_content.value);
     this.props.onNewTweetCreation(newTweet);

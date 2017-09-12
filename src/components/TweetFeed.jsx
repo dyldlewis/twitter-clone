@@ -10,6 +10,7 @@ function TweetFeed(props) {
         <Tweet
           img="http://www.iconsdb.com/icons/preview/gray/twitter-xxl.png"
           content={tweet.content}
+          likedStatus={tweet.likedStatus}
           key={index}/>
       )}
     </div>

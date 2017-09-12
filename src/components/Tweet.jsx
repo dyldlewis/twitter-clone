@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import LikedTweet from './LikedTweet'
 
 function Tweet(props) {
   var imgStyle = {
@@ -11,14 +12,18 @@ function Tweet(props) {
   var tweetStyle = {
     marginLeft: "20",
     display: "inline-block",
-    width: "80%"
+    width: "80%",
+    overflow: "hidden"
   }
+
   return(
     <div>
       <img style={imgStyle} src={props.img}/>
       <div style={tweetStyle}>
-        <h3>{props.title}</h3>
+        <h3>{props.likedStatus}</h3>
         <p>{props.content}</p>
+        <LikedTweet
+          tweet={props}/>
       </div>
       <hr/>
     </div>
@@ -27,8 +32,8 @@ function Tweet(props) {
 
 Tweet.propTypes = {
   img: PropTypes.string,
-  title: PropTypes.string,
-  content: PropTypes.string
+  content: PropTypes.string,
+  likedStatus: PropTypes.bool
 }
 
 export default Tweet;
