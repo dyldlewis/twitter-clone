@@ -14,7 +14,7 @@ class Centerbox extends React.Component {
 
   addNewTweetToList(newTweet) {
     var newMasterTweetList = this.state.masterTweetList.slice();
-    newMasterTweetList.unshift(newTweet);
+    newMasterTweetList.push(newTweet);
     this.setState({masterTweetList: newMasterTweetList});
   }
 
