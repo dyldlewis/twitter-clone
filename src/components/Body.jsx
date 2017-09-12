@@ -4,20 +4,10 @@ import Centerbox from "./Centerbox.jsx";
 import RightSide from "./RightSide.jsx";
 
 function Body(props) {
-  var centerboxStyle = {
-    display: "inline-block",
-    verticalAlign: "top",
-    border: "lightgrey 1px solid",
-    float: "center",
-    width: "500",
-    overflow: "hidden",
-    marginLeft: "20",
-    marginRight: "20"
-  }
   return(
     <div style={props.bodyStyleProp}>
       <Sidebar />
-      <Centerbox styleRuleProp={centerboxStyle}/>
+      <Centerbox/>
       <RightSide/>
     </div>
   )

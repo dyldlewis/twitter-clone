@@ -1,5 +1,6 @@
 import React from 'react';
 import Tweet from './Tweet';
+import PropTypes from "prop-types";
 
 var masterTweetList = [
   {
@@ -20,16 +21,21 @@ var masterTweetList = [
 ]
 
 function TweetFeed(props) {
+  console.log(props.tweetList);
   return (
     <div>
-      {masterTweetList.map((tweet, index) =>
-        <Tweet img={tweet.img}
-               title={tweet.title}
-               content={tweet.content}
-               key={index}/>
+      {props.tweetList.map((tweet, index) =>
+        <Tweet
+          img="http://www.iconsdb.com/icons/preview/gray/twitter-xxl.png"
+          content={tweet.content}
+          key={index}/>
       )}
     </div>
   );
+}
+
+TweetFeed.propTypes = {
+  tweetList: PropTypes.array
 }
 
 export default TweetFeed;
