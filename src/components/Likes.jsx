@@ -18,11 +18,11 @@ function Likes(props) {
   return (
     <div>
       <h1>Likes</h1>
-      {props.tweetList.forEach(function(tweet) {
-        if (tweet.likedStatus === true) {
-          <p>{tweet.content}</p>
-        }
-      })}
+        {props.tweetList.map(x => {
+        	if (x.likedStatus === true){
+        		return <p>{x.content}</p>
+        	}
+        })}
     </div>
   );
 }
