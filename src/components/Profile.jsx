@@ -6,28 +6,28 @@ function Profile(props) {
     border: "lightgrey 1px solid",
     display: "inline-block",
     overflow: "hidden",
-    padding: "10",
+    padding: 10,
     width: "91%"
   }
   var listStyle = {
     listStyle: "none",
-    paddingLeft: "0"
+    paddingLeft: 0
   }
   var listItemStyle = {
     display: "inline",
-    padding: "5",
+    padding: 5,
     listStylePosition: "outside",
     color: "grey",
-    fontSize: "12"
+    fontSize: 12
   }
   var imgStyle = {
-    maxWidth: "75",
-    borderRadius: "10",
+    maxWidth: 75,
+    borderRadius: 10,
   }
   var nameStyle = {
     float: "right",
-    marginRight: "7",
-    marginTop: "50"
+    marginRight: 7,
+    marginTop: 50
   }
   return(
     <div style={profileBoxStyle}>

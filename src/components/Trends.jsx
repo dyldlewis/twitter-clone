@@ -5,7 +5,7 @@ function Trends(props) {
     display: "inline-block",
     border: "lightgrey 1px solid",
     overflow: "hidden",
-    padding: "10",
+    padding: 10,
     width: "91%",
   }
   var titleStyle = {

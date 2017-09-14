@@ -6,7 +6,7 @@ function Sidebar(props) {
   var sidebarStyle = {
     display: "inline-block",
     verticalAlign: "top",
-    maxWidth: "250",
+    maxWidth: 250,
     overflow: "hidden",
   }
   return(

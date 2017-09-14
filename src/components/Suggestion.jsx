@@ -2,12 +2,12 @@ import React from 'react';
 
 function Suggestion(props) {
   var imgStyle = {
-    maxWidth: "50",
+    maxWidth: 50,
     display: "inline-block",
-    margin: "20"
+    margin: 20
   }
   var handleStyle = {
-    marginRight: "10",
+    marginRight: 10,
     display: "inline-block",
     width: "60%"
   }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Tweet from '../models/tweet.js';
 import PropTypes from 'prop-types';
+import { Button } from 'react-bootstrap';
 
 class PostInput extends React.Component {
   constructor(props) {
@@ -38,7 +39,7 @@ class PostInput extends React.Component {
             type="text"
             id="content"
             placeholder="Send Blessing"></input>
-          <button type="submit">Tweet!</button>
+          <Button bsStyle="info" type="submit">Tweet!</Button>
       </form>
       </div>
     )

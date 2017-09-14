@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import LikedTweet from './LikedTweet';
+import { Button } from 'react-bootstrap';
 
 function Tweet(props) {
   var imgStyle = {
     maxWidth: "50",
     display: "inline-block",
-    margin: "10",
-    marginLeft: "20"
+    margin: 10,
+    marginLeft: 20
   }
   var tweetStyle = {
-    marginLeft: "20",
+    marginLeft: 20,
     display: "inline-block",
     width: "80%",
     overflow: "hidden"
@@ -22,15 +22,31 @@ function Tweet(props) {
     fontStyle: "itlaic"
   }
 
+  var buttonStyle = {
+    float: "right",
+    marginRight: "10px"
+  }
+  var imgStyle = {
+    maxWidth: "25px",
+    float: "right",
+    marginRight: "10px"
+  }
+
+
+  let likeAreaContent = null;
+  if (props.tweet.likedStatus) {
+    likeAreaContent = <img style={imgStyle} src="http://www.pngpix.com/wp-content/uploads/2016/05/PNGPIX-COM-Heart-Shape-PNG-Image.png" onClick={() => { props.grandTweetWasUnliked(props.tweet)}}/>
+  } else {
+    likeAreaContent = <Button bsStyle="info" bsSize="small" style={buttonStyle} onClick={() => {props.grandTweetWasLiked(props.tweet)}}>Like</Button>
+  }
+
   return(
     <div>
       <img style={imgStyle} src={props.img}/>
       <div style={tweetStyle}>
-        <h3>{props.likedStatus}</h3>
-        <p>{props.content}</p>
-        <p style={tweetTimerStyle}>{props.timeSinceOpened} ago</p>
-        <LikedTweet
-          tweet={props}/>
+        <p>{props.tweet.content}</p>
+        <p style={tweetTimerStyle}>{props.tweet.timeSinceOpened} ago</p>
+        {likeAreaContent}
       </div>
       <hr/>
     </div>
@@ -38,10 +54,9 @@ function Tweet(props) {
 }
 
 Tweet.propTypes = {
-  img: PropTypes.string,
-  content: PropTypes.string,
-  likedStatus: PropTypes.bool,
-  timeSinceOpened: PropTypes.string.isRequired,
+  tweet: PropTypes.object,
+  grandTweetWasLiked: PropTypes.func,
+  grandTweetWasUnliked: PropTypes.func
 }
 
 export default Tweet;

@@ -10,10 +10,10 @@ function Header(props) {
   var listItemStyle = {
     border: "solid 1px lightgrey",
     display: "inline",
-    padding: "5"
+    padding: 5
   }
   var inputStyle = {
-    margin: "10",
+    margin: 10,
     display: "inline-block"
   }
   return (

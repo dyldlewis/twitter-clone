@@ -5,10 +5,10 @@ function RightSide(props) {
   var rightSideStyle = {
     display: "inline-block",
     verticalAlign: "top",
-    minWidth: "250",
+    minWidth: 250,
     overflow: "hidden",
     border: "lightgrey 1px solid",
-    padding: "10"
+    padding: 10
   }
   return(
     <div style={rightSideStyle}>
