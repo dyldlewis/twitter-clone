@@ -40,8 +40,6 @@ class LikedTweet extends React.Component {
       likeAreaContent = <button style={buttonStyle} onClick={() => { this.tweetWasLiked(this.props.tweet)}}>Like</button>
     }
 
-    console.log(this.props.tweet);
-
     return(
       <div>
         {likeAreaContent}

@@ -18,6 +18,25 @@ class Centerbox extends React.Component {
     this.setState({masterTweetList: newMasterTweetList});
   }
 
+  componentDidMount() {
+    this.timeSinceOpenedChecker = setInterval(() =>
+      this.updateTweetTimeSinceOpened(),
+      5000
+    );
+  }
+
+  componentWillUnmount(){
+    clearInterval(this.timeSinceOpenedChecker);
+  }
+
+  updateTweetTimeSinceOpened() {
+     let newMasterTweetList = this.state.masterTweetList.slice();
+     newMasterTweetList.forEach((tweet) =>
+       tweet.setTimeSinceOpened()
+     );
+     this.setState({masterTweetList:newMasterTweetList})
+   }
+
   render() {
     var centerboxStyle = {
       display: "inline-block",

@@ -3,7 +3,6 @@ import Tweet from './Tweet';
 import PropTypes from "prop-types";
 
 function TweetFeed(props) {
-  console.log(props.tweetList);
   return (
     <div>
       {props.tweetList.map((tweet, index) =>
@@ -11,7 +10,9 @@ function TweetFeed(props) {
           img="http://www.iconsdb.com/icons/preview/gray/twitter-xxl.png"
           content={tweet.content}
           likedStatus={tweet.likedStatus}
+          timeSinceOpened={tweet.timeSinceOpened}
           key={index}/>
+
       )}
     </div>
   );

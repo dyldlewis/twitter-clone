@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import LikedTweet from './LikedTweet'
+import LikedTweet from './LikedTweet';
 
 function Tweet(props) {
   var imgStyle = {
@@ -16,6 +16,11 @@ function Tweet(props) {
     overflow: "hidden"
   }
 
+  var tweetTimerStyle = {
+    float: "left",
+    fontSize: "12px",
+    fontStyle: "itlaic"
+  }
 
   return(
     <div>
@@ -23,6 +28,7 @@ function Tweet(props) {
       <div style={tweetStyle}>
         <h3>{props.likedStatus}</h3>
         <p>{props.content}</p>
+        <p style={tweetTimerStyle}>{props.timeSinceOpened} ago</p>
         <LikedTweet
           tweet={props}/>
       </div>
@@ -34,7 +40,8 @@ function Tweet(props) {
 Tweet.propTypes = {
   img: PropTypes.string,
   content: PropTypes.string,
-  likedStatus: PropTypes.bool
+  likedStatus: PropTypes.bool,
+  timeSinceOpened: PropTypes.string.isRequired,
 }
 
 export default Tweet;
