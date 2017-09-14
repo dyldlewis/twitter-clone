@@ -18,9 +18,9 @@ function Likes(props) {
   return (
     <div>
       <h1>Likes</h1>
-        {props.tweetList.map(x => {
-        	if (x.likedStatus === true){
-        		return <p>{x.content}</p>
+        {props.tweetList.map(tweet => {
+        	if (tweet.likedStatus === true){
+        		return <p>{tweet.content}</p>
         	}
         })}
     </div>
